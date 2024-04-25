@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+</style>
+<body bgcolor="cyan"> 
+  {% include "exam/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center" style="background:cyan;">
+    <h2 class="display-3" style="color:red;font-weight:bold;font-family:elephant;">Online Examination System</h2>
+    <p class="display-4 d-none d-sm-block" style="font-weight:bold;">Welcome to your online examinations!</p>
+    <p class="lead" style="font-weight:bold;color:green;">Sign Up or Log In to start your online examination</p>
+
+  
+    <p><strong style="font-family:mv boli;"> Click Here to Sign up:</strong></p>
+    <a href="/student/studentsignup" class="btn btn-lg btn-success" style="padding-right: 35px; border-radius: 50%;"><i  aria-hidden="true"></i> Sign Up as Student</a>
+    
+    <br><br><br>
+  </div>  
+</section>
+  {% include "exam/footer.html" %}
+
+
+</body>
+
+</html>
